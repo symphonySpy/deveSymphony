@@ -1,0 +1,41 @@
+
+@mixin mode($bgweb,$bgmenu,$bgcontent,$color){
+    background-color: $bgweb;
+    color: $color;
+    ///// navbar
+    nav{
+        color:$color;
+        .navbar{
+            background-color: $bgmenu; 
+        }
+        a{
+            color:$color;
+        }
+    }
+    header{
+        background-color: $bgweb;
+        a{
+            color: $color;
+        }
+        color: $color;
+        
+    }
+    ///// section
+    section{
+        background-color: $bgcontent;
+        color:$color;
+        a{
+            color:$color;
+        }
+    }
+    ///// footer
+    footer{
+        background-color: $bgweb;
+        color:$color;
+        a{
+            color:$color;
+        }
+    }
+  }
+
+ 

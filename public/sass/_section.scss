@@ -1,0 +1,59 @@
+section{
+    @extend %width-body;
+
+    .header_content{
+        font-size: $fonttitle;
+        padding:1em 0em 0em 1em;
+        font-weight: bold;
+        text-align: left;
+    }
+    .content{
+        padding: 0em 2em 3em 3em;
+        .boximgcontent{
+            text-align: center;  
+            .imgcontent{
+                width:100vh; 
+            }
+        }
+        .postprofile{
+            height: 5%;
+            display: table;
+            .box_img_postprofile{ 
+                width: 6%;     
+                float: left;
+                display: table-row;
+                .imgprofile{
+                    width: 100%;
+                    cursor: pointer;
+                }
+            }
+            .box_data_postprofile{
+                width: 92%;
+                float: right;
+                display: table-row;
+                padding-left: 1em;
+                vertical-align: middle;
+                .name{
+                    
+                    font-size: 1.4em;
+                    a{
+                        text-decoration: none;
+                        color:$hover;
+                    }
+                }
+                .time{
+                    font-size: 0.8em;
+                    
+                }
+            }
+        }
+        .titlepost{
+            font-size: $fonttitlepost;
+            font-weight: bold;
+            padding-left:1em;
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}

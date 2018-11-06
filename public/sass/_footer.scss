@@ -1,0 +1,24 @@
+footer{
+    @extend %width-body;
+    margin-top:0px;
+    //background-color: $darkmode2;
+    padding:40px 0px;
+    text-align: center;
+    font-size: 1.1em;
+   // color:#fff;
+    a{
+        text-decoration: none;
+        //color: #fff;
+    }
+    a:hover{
+        color: $hover;
+        opacity: 1;
+    }
+    .ifacebook{
+        @extend %iicon;
+    }
+    .igithub{
+        @extend %iicon;
+    }
+
+}

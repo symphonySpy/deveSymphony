@@ -1,0 +1,77 @@
+//lightmode
+$bgweb:#fff;
+$content:#f5f5f5 ;
+$menu:#fff;
+$color_lightmode:#000;
+
+//darkmode
+$bgmenu:#535353;
+$darkmode:#2c2c2c;
+$darkmode2:#191919;
+$color_darkmode:#fff;
+
+$hover:#51a16b;
+$fonttitle:2.3em;
+$fonttitlepost:1.8em;
+
+%width-body{
+  @media screen and (min-width: 770px) {
+  margin-top: 5px;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 5px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+%width-header{
+  margin-top: 5px;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+%iicon{
+  padding: 0.5em;
+  font-size: 2.5em;
+  opacity: 0.8;
+}
+
+@import '_navbar';
+@import '_header';
+@import '_section';
+@import '_footer';
+@import '_mode';
+
+html,
+body,
+ul,
+ol {
+  margin:  0;
+  padding: 0;
+}
+
+body{
+    .thiscricle{
+      text-align: center;
+      padding: 4em 0em 1em 0em;
+      i{
+          padding: 0em 1em;       
+          }
+  }
+  .cricle_footer{
+    margin-top: 3em;
+  }
+}
+
+.darkmode{
+ @include mode($darkmode2,$bgmenu,$darkmode,$color_darkmode);
+}
+.lightmode{
+  @include mode($bgweb,$menu,$content,$color_lightmode);
+}

@@ -1,0 +1,79 @@
+html(lang='en')
+  head
+    // Required meta tags
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    title #{title}
+    link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.3.1/css/all.css', integrity='sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU', crossorigin='anonymous')
+    link(rel='stylesheet', href='../css/main.css')
+    script(src='../js/styles.js')
+  body#thisbody
+    nav
+      .navbar
+        .boxmenu
+          ul#topnav.navs
+            li.icon
+              img.logo#logo_index(src='../images/logo_devsymphony.png', alt='logo' onclick="icon_index()")
+            li.dropdown
+              a(href='#') #{namenavbar[0]}
+            li
+              a(href='#') #{namenavbar[1]}
+            li
+              a(href='#') #{namenavbar[2]}
+            li
+              a(href='#') #{namenavbar[3]}
+            li
+              i.fas.fa-moon.changemode#changemode(onclick="chengemode()")
+            li.iconbar
+              a.iconnavbar#iconshownav(href='javascript:void(0);' onclick="mininavbar()")
+                i.fa.fa-bars
+    header
+      .boxheader
+        img(src='../images/header.png', alt='header')
+        p บทความที่เกี่ยวกับงาน fontend 
+        p ภาษาที่ใช้พัฒนา html jade CSS LESS SCSS Javascript Nodejs other
+        p รวมทั้ง งานที่เกี่ยวข้องกับการออกแบบ
+        p และอื่นๆ ที่สนใจ
+
+    .thiscricle
+      i.fas.fa-minus
+      i.fas.fa-circle
+      i.fab.fa-first-order
+      i.fas.fa-circle
+      i.fas.fa-minus
+      
+    section
+      p.header_content >> #{content}
+      .content
+        .postprofile
+          .box_img_postprofile
+            img.imgprofile(src='../images/logo_devsymphony.png', alt='imgprofile')
+          .box_data_postprofile
+            span.name
+              a(href='')  #{name}
+            br
+            span.time #{date}
+        span.titlepost
+          a(href='#') #{titlecontent}
+        br
+        br
+        .boximgcontent
+          //img.imgcontent(src='../images/test01.jpg', alt='test')
+    .thiscricle.cricle_footer
+      i.fas.fa-minus
+      i.fas.fa-circle
+      i.fab.fa-first-order
+      i.fas.fa-circle
+      i.fas.fa-minus
+    footer
+      .social
+        a(href='#{github}', target='_blank')
+          i.fab.fa-github.igithub
+        a(href='#{facebook}', target='_blank')
+          i.fab.fa-facebook-square.ifacebook
+      p Made by Symphony
+      | #{copy}
+      
+      
+
+   

@@ -1,0 +1,25 @@
+{
+  "name": "deveSymphony",
+  "version": "1.0.0",
+  "description": "devSymphonyStyle.com",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.1.3",
+    "express": "^4.16.4",
+    "jade": "^1.11.0",
+    "jade-bootstrap": "^1.0.14",
+    "npm": "^6.4.1",
+    "swig": "^1.4.2"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "css": "node-sass public/sass/main.scss public/css/main.css",
+    "css:compile": "yarn css -- -w"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
